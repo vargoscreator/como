@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">Twixio</a>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">HOW IT WORKS</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">PRICING</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__btn btn" href="#">Get started</a>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="29" viewBox="0 0 46 29" fill="none">
+                        <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H43.5C44.8807 0 46 1.11929 46 2.5C46 3.88071 44.8807 5 43.5 5H2.5C1.11929 5 0 3.88071 0 2.5Z" fill="#249E63"/>
+                        <path d="M0 26.5C0 25.1193 1.11929 24 2.5 24H43.5C44.8807 24 46 25.1193 46 26.5C46 27.8807 44.8807 29 43.5 29H2.5C1.11929 29 0 27.8807 0 26.5Z" fill="#249E63"/>
+                        <path d="M0 14.5C0 13.1193 1.11929 12 2.5 12H43.5C44.8807 12 46 13.1193 46 14.5C46 15.8807 44.8807 17 43.5 17H2.5C1.11929 17 0 15.8807 0 14.5Z" fill="#249E63"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                        <path d="M0.736139 1.23668C1.71245 0.260375 3.29536 0.260376 4.27167 1.23668L33.2631 30.228C34.2394 31.2043 34.2394 32.7872 33.2631 33.7636C32.2867 34.7399 30.7038 34.7399 29.7275 33.7636L0.736139 4.77222C-0.240172 3.7959 -0.240171 2.21299 0.736139 1.23668Z" fill="#249E63"/>
+                        <path d="M0.737494 33.763C-0.238817 32.7867 -0.238817 31.2038 0.737494 30.2275L29.7289 1.23613C30.7052 0.259828 32.2881 0.259829 33.2644 1.23614C34.2407 2.21245 34.2407 3.79536 33.2644 4.77167L4.27303 33.763C3.29672 34.7393 1.7138 34.7393 0.737494 33.763Z" fill="#249E63"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="userlogin userlogin-login">
+            <div class="container">
+                <div class="userlogin__inner">
+                    <div class="userlogin-content userlogin-step active">
+                        <h1 class="userlogin__title title-2">Login</h1>
+                        <div class="userlogin__content">
+                            <form class="userlogin__form form-content" action="#">
+                                <div class="form-box">
+                                    <div class="form-block">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input class="form-input" type="email" id="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label" for="password">Password</label>
+                                        <input class="form-input" type="password" id="password" name="password" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <button class="form-forgot" type="button">Forgot password?</button>
+                                <button class="form-btn btn" type="submit">Log in</button>
+                            </form>    
+                            <a class="userlogin__google" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.64 9.20419C17.64 8.56601 17.5827 7.95237 17.4764 7.36328H9V10.8446H13.8436C13.635 11.9696 13.0009 12.9228 12.0477 13.561V15.8192H14.9564C16.6582 14.2524 17.64 11.9451 17.64 9.20419Z" fill="#4285F4"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99976 18C11.4298 18 13.467 17.1941 14.9561 15.8195L12.0475 13.5613C11.2416 14.1013 10.2107 14.4204 8.99976 14.4204C6.65567 14.4204 4.67158 12.8372 3.96385 10.71H0.957031V13.0418C2.43794 15.9831 5.48158 18 8.99976 18Z" fill="#34A853"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.96409 10.7098C3.78409 10.1698 3.68182 9.59301 3.68182 8.99983C3.68182 8.40664 3.78409 7.82983 3.96409 7.28983V4.95801H0.957273C0.347727 6.17301 0 7.54755 0 8.99983C0 10.4521 0.347727 11.8266 0.957273 13.0416L3.96409 10.7098Z" fill="#FBBC05"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99976 3.57955C10.3211 3.57955 11.5075 4.03364 12.4402 4.92545L15.0216 2.34409C13.4629 0.891818 11.4257 0 8.99976 0C5.48158 0 2.43794 2.01682 0.957031 4.95818L3.96385 7.29C4.67158 5.16273 6.65567 3.57955 8.99976 3.57955Z" fill="#EA4335"/>
+                                </svg>
+                                Sign in with Google
+                            </a>    
+                            <div class="userlogin__bottom">
+                                <p class="userlogin__bottom-title">Don’t have an account?</p>
+                                <a class="userlogin__bottom-btn btn" href="register.html">Create Account</a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="userlogin-recover userlogin-step">
+                        <h1 class="userlogin__title title-2">Recover password</h1>
+                        <p class="userlogin__descr">We will send the recovery password to the email registered on the platform</p>
+                        <div class="userlogin__content">
+                            <form class="userlogin__form form-content" action="#">
+                                <div class="form-box">
+                                    <div class="form-block">
+                                        <label class="form-label" for="recover-email">Email</label>
+                                        <input class="form-input" type="email" id="recover-email" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <button class="form-btn form-btn-link btn" type="submit">Send recovery link</button>
+                                <button class="form-back-login" type="button">Cancel</button>
+                            </form>
+                        </div>                        
+                    </div>
+
+                    <div class="userlogin-recover-sent userlogin-step">
+                        <div class="userlogin-recover-sent-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80" fill="none">
+                                <g clip-path="url(#clip0_26_1028)">
+                                  <path d="M80.4998 35.3089C80.4992 34.6966 80.2486 34.0905 79.8134 33.6553L70.9688 24.8105V2.34375C70.9688 1.04937 69.9194 0 68.625 0H12.375C11.0806 0 10.0312 1.04937 10.0312 2.34375V24.8105L1.18656 33.6553C0.747031 34.0953 0.500937 34.7014 0.500156 35.3089L0.5 35.3133V77.6562C0.5 78.9506 1.54937 80 2.84375 80H78.1562C79.4506 80 80.5 78.9506 80.5 77.6562V35.3133L80.4998 35.3089ZM63.4494 75.3125H17.5506C16.5444 68.9745 11.5255 63.9558 5.1875 62.9494V40.8044L25.803 60.5586C26.2392 60.9767 26.8203 61.21 27.4245 61.21H53.6413C54.2466 61.21 54.8286 60.9758 55.2652 60.5563L75.8125 40.8145V62.9494C69.4745 63.9558 64.4558 68.9745 63.4494 75.3125ZM74.8083 35.2791L70.9688 38.968V31.4395L74.8083 35.2791ZM14.7188 4.6875H66.2812C66.2831 21.0589 66.2761 43.2773 66.2905 43.4628L52.698 56.5225H28.3662L14.6975 43.4248C14.71 43.3264 14.7188 43.2269 14.7188 43.125V4.6875ZM10.0312 38.9536L6.19406 35.2767L10.0312 31.4395V38.9536ZM5.1875 67.7267C8.93453 68.6112 11.8889 71.5655 12.7733 75.3125H5.1875V67.7267ZM68.2267 75.3125C69.1112 71.5653 72.0655 68.6111 75.8125 67.7267V75.3125H68.2267Z" fill="black"/>
+                                  <path d="M35.6914 14.2793H45.1145C46.4089 14.2793 47.4583 13.2299 47.4583 11.9355C47.4583 10.6412 46.4089 9.5918 45.1145 9.5918H35.6914C34.397 9.5918 33.3477 10.6412 33.3477 11.9355C33.3477 13.2299 34.397 14.2793 35.6914 14.2793Z" fill="black"/>
+                                  <path d="M26.4609 23.7383H54.3455C55.6398 23.7383 56.6892 22.6889 56.6892 21.3945C56.6892 20.1002 55.6398 19.0508 54.3455 19.0508H26.4609C25.1666 19.0508 24.1172 20.1002 24.1172 21.3945C24.1172 22.6889 25.1666 23.7383 26.4609 23.7383Z" fill="black"/>
+                                  <path d="M26.4609 33.1973H54.3455C55.6398 33.1973 56.6892 32.1479 56.6892 30.8535C56.6892 29.5591 55.6398 28.5098 54.3455 28.5098H26.4609C25.1666 28.5098 24.1172 29.5591 24.1172 30.8535C24.1172 32.1479 25.1666 33.1973 26.4609 33.1973Z" fill="black"/>
+                                  <path d="M26.4609 42.5H54.3455C55.6398 42.5 56.6892 41.4506 56.6892 40.1562C56.6892 38.8619 55.6398 37.8125 54.3455 37.8125H26.4609C25.1666 37.8125 24.1172 38.8619 24.1172 40.1562C24.1172 41.4506 25.1666 42.5 26.4609 42.5Z" fill="black"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_26_1028">
+                                    <rect width="80" height="80" fill="white" transform="translate(0.5)"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="userlogin-recover-sent-title">Recovery link sent</h3>
+                        <p class="userlogin-recover-sent-descr">
+                            We have sent an email to <br><span>Andrii321@gmail.com.</span>.<br>
+                            Please follow the link provided to recover your password.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cookiesPopup show">
+            <div class="container">
+                <div class="cookiesPopup__inner">
+                    <h4 class="cookiesPopup__title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#45484F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        We use cookies. For further details, please read our Privacy Policy
+                    </h4>
+                    <button class="cookiesPopup__close btn-2">CLOSE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__start">
+                        <div class="footer__box">
+                        <h3 class="footer__name">Support :</h3>
+                        <p class="footer__time">Mon - Sun, 08:00 - 01:00 (UTC+3)</p>
+                        <a class="footer__tg" href="#" target="_blank">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.78906 10.4883L10.9375 5.07422C10.9844 4.84505 10.9557 4.68099 10.8516 4.58203C10.7526 4.48307 10.6198 4.46484 10.4531 4.52734L3.70313 7.12891C3.55208 7.1862 3.44792 7.2513 3.39063 7.32422C3.33854 7.39714 3.33333 7.46745 3.375 7.53516C3.41667 7.59766 3.5 7.64714 3.625 7.68359L5.35156 8.22266L9.35938 5.69922C9.46875 5.6263 9.55208 5.61068 9.60938 5.65234C9.64583 5.67839 9.63542 5.71745 9.57812 5.76953L6.33594 8.69922L6.21094 10.4805C6.33073 10.4805 6.44792 10.4232 6.5625 10.3086L7.40625 9.49609L9.15625 10.7852C9.48958 10.9727 9.70052 10.8737 9.78906 10.4883ZM13.9453 4.55859C14.3151 5.42318 14.5 6.32943 14.5 7.27734C14.5 8.22526 14.3151 9.13151 13.9453 9.99609C13.5755 10.8607 13.0781 11.6055 12.4531 12.2305C11.8281 12.8555 11.0833 13.3529 10.2188 13.7227C9.35417 14.0924 8.44792 14.2773 7.5 14.2773C6.55208 14.2773 5.64583 14.0924 4.78125 13.7227C3.91667 13.3529 3.17188 12.8555 2.54688 12.2305C1.92188 11.6055 1.42448 10.8607 1.05469 9.99609C0.684896 9.13151 0.5 8.22526 0.5 7.27734C0.5 6.32943 0.684896 5.42318 1.05469 4.55859C1.42448 3.69401 1.92188 2.94922 2.54688 2.32422C3.17188 1.69922 3.91667 1.20182 4.78125 0.832031C5.64583 0.462239 6.55208 0.277343 7.5 0.277343C8.44792 0.277343 9.35417 0.462239 10.2188 0.832031C11.0833 1.20182 11.8281 1.69922 12.4531 2.32422C13.0781 2.94922 13.5755 3.69401 13.9453 4.55859Z" fill="#45484F"/>
+                            </svg>
+                            Telegram
+                        </a>
+                        <a class="footer__mail" href="mailto:support@shrtlygen.io">support@shrtlygen.io</a>
+                        <p class="footer__copy">© <strong>Twixio</strong> 2025</p>
+                    </div>
+                    <div class="footer__info">
+                        <p class="footer__info-descr">If there is a problem or issue about our service, we are here to help. You can reach <br>us and we will aim to get back to you as soon as possible <a href="mailto:info@twixio.com">info@twixio.com</a></p>
+                        <div class="footer__info-pay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="62" height="41" viewBox="0 0 62 41" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.6162 16.2262C37.6162 15.5342 38.2743 14.7862 39.6762 14.5982C41.3186 14.4376 42.9722 14.7356 44.4695 15.4622L45.3238 11.3582C43.8662 10.8176 42.3296 10.5498 40.7838 10.5672C35.9762 10.5672 32.6124 13.2012 32.5838 16.9592C32.5838 19.7392 34.9952 21.2792 36.7895 22.2292C38.5829 23.1792 39.3114 23.7842 39.2981 24.6342C39.2981 25.9292 37.7838 26.5052 36.3962 26.5202C34.662 26.5573 32.9466 26.1364 31.4076 25.2962L30.5381 29.5432C32.2614 30.2303 34.0909 30.5772 35.9343 30.5662C41.0219 30.5662 44.3438 27.9602 44.3438 23.9432C44.3438 20.8892 41.8962 19.5622 39.939 18.5002C38.62 17.7852 37.5238 17.1902 37.5457 16.2682L37.6162 16.2252V16.2262ZM14.1552 24.0282L19.2152 10.8682H24.3448L16.481 30.2202H11.3514L7.44286 14.7562C7.40842 14.3944 7.28466 14.0484 7.08381 13.7522C6.88102 13.4536 6.60892 13.2144 6.29333 13.0572C4.76497 12.3078 3.15533 11.7567 1.5 11.4162L1.61238 10.8542H9.86667C10.4069 10.8505 10.9309 11.0478 11.3457 11.4112C11.7571 11.7742 12.0286 12.2762 12.1095 12.8272L14.1552 24.0282ZM22.4 30.2062L26.4095 10.8692H31.2571L27.2505 30.2062H22.4ZM54.2543 16.1532L51.6762 23.3522H55.6562L54.2543 16.1532ZM52.2562 11.2422C52.6282 10.9839 53.0655 10.8487 53.5114 10.8542L57.6038 10.8692L61.5 30.2192H57.0019L56.4124 27.3402H50.2048L49.1952 30.2202H44.1648L51.4381 12.2942C51.6 11.8662 51.8848 11.4992 52.2562 11.2422Z" fill="#1434CB"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="41" viewBox="0 0 55 41" fill="none">
+                                <mask id="mask0_6_90" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="0" width="55" height="41">
+                                    <path d="M1.5 0.707031H55.5V40.707H1.5V0.707031Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_6_90)">
+                                    <path d="M34.063 10.2266H22.9014V31.1896H34.063V10.2266Z" fill="#FF5F00"/>
+                                    <path d="M23.6102 20.7076C23.6102 16.6336 25.4173 12.7446 28.4644 10.2256C22.9372 5.67057 14.895 6.67057 10.5364 12.4856C6.21355 18.2626 7.17108 26.6336 12.734 31.1886C14.9735 33.0407 17.7531 34.0494 20.6176 34.0494C23.482 34.0494 26.2616 33.0407 28.5011 31.1886C26.9773 29.9365 25.7461 28.3435 24.8995 26.5285C24.0529 24.7136 23.6128 22.7237 23.6122 20.7076H23.6102Z" fill="#EB001B"/>
+                                    <path d="M49.1224 20.7076C49.1224 28.0776 43.4177 34.0406 36.3659 34.0406C33.4962 34.0406 30.7325 33.0406 28.5002 31.1886C34.0275 26.6336 34.9841 18.2626 30.6265 12.4486C29.9881 11.6336 29.2794 10.8556 28.5002 10.2256C34.0275 5.67057 42.0716 6.67057 46.3935 12.4856C48.1682 14.8303 49.1296 17.7268 49.1224 20.7076Z" fill="#F79E1B"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__name">Menu</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">How it works</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__name">Legacy</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use </a>
+                        </li>
+                        <li>
+                            <a href="#">Refund policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__name">Company</h3>
+                    <p class="footer__address">Gonzales, 5 <br>The Leventis, Gallery Tower, <br>Floor 13, Flat/Office <br>1097, Barcelona, Spain <br>XXXX LTD <br>HEXXXXX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
